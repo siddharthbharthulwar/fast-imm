@@ -366,7 +366,7 @@ dataloader = DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=True, num_worker
 
 
 # <<< MODIFIED FOR CIFAR >>>
-model = SimpleUNet(img_channels=IMG_CHANNELS, time_emb_dim=TIME_EMB_DIM, base_dim=128).to(DEVICE)
+model = SimpleUNet(img_channels=IMG_CHANNELS, time_emb_dim=TIME_EMB_DIM, base_dim=256).to(DEVICE)
 # <<< END MODIFIED >>>
 model_ema = deepcopy(model).to(DEVICE) # Exponential Moving Average model
 optimizer = optim.AdamW(model.parameters(), lr=LEARNING_RATE)

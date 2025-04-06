@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 from copy import deepcopy
 
 # --- Hyperparameters ---
-DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+DEVICE = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {DEVICE}")
 
 IMG_SIZE = 28
