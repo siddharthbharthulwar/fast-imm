@@ -1,0 +1,9 @@
+# Ignore downloaded datasets
+data/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Results/Outputs
+imm_cifar10_results_v2/ 
